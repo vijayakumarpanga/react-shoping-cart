@@ -1,0 +1,16 @@
+.cart-item{
+    display : inline-flex;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+.cart-item.right{
+    padding: 0 20px ;
+}
+.cart-item.right{
+    padding: 20px ;
+}
+.cart-item.actions{
+    margin-top: 20px;
+}
