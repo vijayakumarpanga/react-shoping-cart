@@ -1,24 +1,38 @@
 import React ,{Component} from 'react'
 
 class CartItem extends Component{
+    constructor(){
+        super()
+        this.state = {
+            id     : 1,
+            title : 'Phone',
+            price  : 999,
+            qty    : 1
+        }
+    }
     render(){
+        const {title,price,qty}=this.state
         return(
             <div className="cart-item">
-                <div className="cart-item.left">
-                <img style= {{borderColor : 'green',height :200,width:100,borderRadius:20,borderStyle:'solid'}}>
+                <div className="left">
+                <img   style= {{borderColor : 'green',height :120,width:120,borderRadius:4,borderStyle:'solid'}}>
                 </img>
                 </div>
-                <div classNmae="cart-item.right">
-                <div>
-                    Phone
+                <div className="right">
+                <div style={{fontSize: 20,color:'gray'}}>
+                    {title}
                 </div>
-                <div>
-                     Rs 10000
+                <div  style={{fontSize: 20,color:'gray'}}>
+                     Rs {price}
                 </div>
-                <div>
-                     Qty : 1 
+                <div  style={{fontSize: 20,color:'gray'}}>
+                     Qty : {qty}
                 </div>
-                <div>
+                <div className="actions">
+                <img className = "icons"  style={{height : 43,width:45}} alt="Increase" src="https://t3.ftcdn.net/jpg/02/51/03/82/240_F_251038282_CLb3d8tk99bGoU9ILEYS8vY215fgRmGT.jpg"></img>
+                    <img className = "" style={{height : 43,width:45}} alt="Decrease" src="https://t4.ftcdn.net/jpg/02/78/84/57/240_F_278845758_9xl3srVgd8p4jquxgxugGaHV1e5EOlLO.jpg"></img>
+                    <img className = "" style={{height : 38,width:35}} alt="Delete" src="https://t4.ftcdn.net/jpg/03/73/50/09/240_F_373500918_7vISJB85YXvvu7SgnpktP752LWRrLzyI.jpg"></img>
+
                   {//CartItem actions
                   }
                 </div>
