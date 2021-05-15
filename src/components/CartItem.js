@@ -1,5 +1,5 @@
 import React ,{Component} from 'react'
-
+import '../css/cart-item.css'
 class CartItem extends Component{
     constructor(){
         super()
@@ -48,7 +48,7 @@ class CartItem extends Component{
                 <div className="actions">
                 <img onClick={this.increaseQuantity}   style={{height : 43,width:45}} alt="Increase" src="https://t3.ftcdn.net/jpg/02/51/03/82/240_F_251038282_CLb3d8tk99bGoU9ILEYS8vY215fgRmGT.jpg"></img>
                     <img  onClick={this.decreaseQuantity} className = "" style={{height : 43,width:45}} alt="Decrease" src="https://t4.ftcdn.net/jpg/02/78/84/57/240_F_278845758_9xl3srVgd8p4jquxgxugGaHV1e5EOlLO.jpg"></img>
-                    <img onClick={this.DeleteItem}  className = "" style={{height : 38,width:35}} alt="Delete" src="https://t4.ftcdn.net/jpg/03/73/50/09/240_F_373500918_7vISJB85YXvvu7SgnpktP752LWRrLzyI.jpg"></img>
+                    <img onClick={this.DeleteItem}  className = "cart-item.icons" style={{height : 38,width:35}} alt="Delete" src="https://t4.ftcdn.net/jpg/03/73/50/09/240_F_373500918_7vISJB85YXvvu7SgnpktP752LWRrLzyI.jpg"></img>
 
                   {//CartItem actions
                   }

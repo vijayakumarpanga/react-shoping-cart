@@ -1,12 +1,12 @@
 import './App.css';
-import CartItem from './components/CartItem';
+import Cart from './components/Cart';
 import './css/cart-item.css'
 
 function App() {
   return (
     <div className="App">
-     
-      <CartItem></CartItem>
+     <Cart></Cart>
+    
     </div>
   );
 }
