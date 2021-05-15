@@ -3,14 +3,18 @@
     padding-top: 50px;
     padding-right: 30px;
     padding-bottom: 50px;
-    padding-left: 80px;
+    padding-left: 0px;
 }
 .cart-item.right{
-    padding: 0 20px ;
+    margin-left: 10px ;
 }
 .cart-item.right{
     padding: 20px ;
 }
 .cart-item.actions{
     margin-top: 20px;
+}
+.cart-item.icons{
+    height: 40px;
+    width: 40px;
 }
