@@ -3,11 +3,11 @@ import '../css/cart-item.css'
 class CartItem extends Component{
     
     render(){
-        const {title,price,qty}=this.props.product
+        const {img,title,price,qty}=this.props.product
         return(
             <div className="cart-item">
                 <div className="left">
-                <img   style= {{borderColor : 'green',height :120,width:120,borderRadius:4,borderStyle:'solid'}}>
+                <img  src={img}  style= {{borderColor : 'green',height :120,width:120,borderRadius:4,borderStyle:'solid'}}>
                 </img>
                 </div>
                 <div className="right">
